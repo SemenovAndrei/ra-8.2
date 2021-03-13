@@ -1,0 +1,25 @@
+@url = http://localhost:7070
+
+###
+
+GET {{url}}/data
+
+###
+
+GET {{url}}/error
+
+
+###
+
+GET {{url}}/loading
+
+###
+
+POST {{url}}/tickets?method=createTicket
+Content-Type: application/json
+
+{ "name": "сделать прототип API", "description": "123" }
+
+###
+
+DELETE {{url}}/tickets/2
